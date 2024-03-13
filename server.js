@@ -1,11 +1,11 @@
-// require('dotenv').config();
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 // const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://aps:1234@cluster0.agdg9yv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
